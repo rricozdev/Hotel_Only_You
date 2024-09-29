@@ -1,0 +1,71 @@
+.formularioContainer {
+    width: 70%;
+    max-width: 400px;
+    margin: 80px 30px 80px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.466);
+    text-align: center; /* Centramos el contenido */
+  }
+
+  .formularioContainer h2 {
+    color: grey;
+  }
+  
+  .formularioContainer h2 {
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+    font-size: 24px; /* Tamaño del título */
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos los elementos */
+  }
+  
+  .formGroup {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: rgb(248, 244, 244);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px; /* Ancho máximo */
+  }
+  
+  .submitButton:hover {
+    /* background-color: #ffdb58; */
+    /* color: black; */
+    background-color: var(--indian-red);
+    color: whitesmoke;
+  }
+  
+  @media (max-width: 768px) {
+    .formularioContainer {
+      margin: 50px 100px 30px 100px;
+    }
+  }

@@ -1,0 +1,28 @@
+
+.arrowButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent; /* Fondo transparente */
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .arrowButton:hover {
+    background-color: transparent; /* No cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Hace que el ícono crezca un poco más al pasar el ratón */
+  }
+  
+  .arrow {
+    font-size: 42px; /* Tamaño del ícono */
+    font-weight: bold;
+    color: #aaa; /* Color del ícono */
+    transition: 0.8s ease-in-out;
+  }
+
+  .arrow:hover {
+    color: var(--indian-red);
+    /* color: #20914b; */
+  }
+  

@@ -1,0 +1,95 @@
+.Cabecera {
+    width: 100%;
+    background: #141414;
+    padding: 1em;
+    color: grey;
+    /* color: whitesmoke; */
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* Para que no desplace los componentes inferiores, sino que se sobreponga */
+    z-index: 2000;
+}
+
+.Cabecera_a {
+    font-size: inherit;
+    color: inherit;
+    display: block; /* Asegura que el enlace ocupe todo el espacio del li */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    padding: inherit; /* Hereda el padding del li */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho y alto */
+}
+
+.Cabecera_img {
+    width: 2.5em;
+}
+
+.Cabecera_button {
+    display: none;
+    cursor: pointer;
+}
+
+.Cabecera_svg {
+    width: 2em;
+    height: 2em;
+    fill: grey;
+}
+
+.Cabecera_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Cabecera_li {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0 .9em;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 1em; /* Añade padding para aumentar la altura */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho y alto */
+    transition: background-color 0.3s ease;
+}
+
+.Cabecera_li:hover {
+    background-color: var(--indian-red);
+    /* background-color: #20914b; */
+    color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+    .Cabecera_button {
+        display: flex;
+    }
+
+    .Cabecera_nav {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+
+    .Cabecera_nav.isActive {
+        height: 65vh;
+        opacity: 1;
+    }
+
+    .Cabecera_ul {
+        flex-direction: column;
+    }
+
+    .Cabecera_li {
+        margin: .5em 0;
+    }
+}
